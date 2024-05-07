@@ -34,5 +34,10 @@
         android:id="@+id/textResultado"
         android:gravity="center"
         android:text="R$"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="bottom"
+        android:text="Nome: Matheus Rodrigues Santos da Conceição (19) / Turma: 1202" />
 
 </LinearLayout>
