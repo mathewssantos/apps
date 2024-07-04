@@ -21,7 +21,7 @@ class MainActivity : AppCompatActivity() {
     )
 
     //Qual o Jogador está jogando
-    var jogadorAtual = "X"
+    var jogadorAtual = "REALMADRID"
 
     override fun onCreate(savedInstanceState: Bundle?) {
         binding = ActivityMainBinding.inflate(layoutInflater)
@@ -59,12 +59,12 @@ class MainActivity : AppCompatActivity() {
             finish()
         }
 
-        if(jogadorAtual.equals("X")) {
-            buttonSelecionado.setBackgroundResource(R.drawable.sonic)
-            jogadorAtual = "O"
+        if(jogadorAtual.equals("REALMADRID")) {
+            buttonSelecionado.setBackgroundResource(R.drawable.real)
+            jogadorAtual = "BARCELONA"
         }else{
-            buttonSelecionado.setBackgroundColor(Color.RED)
-            jogadorAtual = "X"
+            buttonSelecionado.setBackgroundResource(R.drawable.barcaa)
+            jogadorAtual = "REALMADRID"
         }
         buttonSelecionado.isEnabled=false
     }
@@ -93,7 +93,7 @@ class MainActivity : AppCompatActivity() {
         var empate = 0
         for (linha in tabuleiro) {
             for (valor in linha) {
-                if(valor.equals("X")||valor.equals("O")){
+                if(valor.equals("REALMADRID")||valor.equals("BARCELONA")){
                     empate++
                 }
             }
